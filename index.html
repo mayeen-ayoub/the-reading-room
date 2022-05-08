@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>The Reading Room</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+
+<body id="index"> 
+	<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #413528;">
+		<div class="container-fluid">
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="./index.html">Dashboard</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="./reading-timer.html">Reading Timer</a>
+					</li>
+				</ul>
+				<form class="d-flex">
+	        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="search">
+	        <button class="btn btn-outline-light" id="search-btn">Search</button>
+	      </form>
+			</div>
+		</div>
+	</nav>
+
+  <div id="index-page">
+   <section class="header">
+      <h2 class="welcome">WELCOME TO THE READING ROOM</h2>
+    </section>
+		<div class="container">
+			<h3 class="hello">Hi, <span id="name">Sarah!</span></h3>
+	    <h3 id="currentlyReading"></h3>
+			<div class="row">
+				<div class="col">
+					<div id="stats" class="center-div">
+						<h6 class="creads">Reading Status</h6>
+						<canvas id="myChart"></canvas>	
+					</div>
+				</div>
+				<div class="col">
+					<img src="./images/cat-reading.png" width="100%" style="margin-top:100px;"/>
+				</div>
+			</div>
+			
+
+	    <div class="shelf-collection">
+        <h6 class="creads">Current Reads</h6>
+        <div class="bookShelf">
+  	      <table class="shelf">
+  	        <tr>
+  	          <td><img class="currentBook"><span id="noCurrent"></span></td>
+  	          <td><img class="currentBook"></td>
+  	          <td><img class="currentBook"></td>
+  	          <td><img class="currentBook"></td>
+  	          <td><img class="currentBook"></td>
+  	        </tr>
+  	      </table>
+  	    </div>
+  
+        <h6 class="creads">Recently Read</h6>
+        <div class="bookShelf">
+  	      <table class="shelf">
+  	        <tr>
+  	          <td><img class="readBook"><span id="noCurrent"></span></td>
+  	          <td><img class="readBook"></td>
+  	          <td><img class="readBook"></td>
+  	          <td><img class="readBook"></td>
+  	          <td><img class="readBook"></td>
+  	        </tr>
+  	      </table>
+  	    </div>
+  
+        <h6 class="creads">To-Be-Read</h6>
+        <div class="bookShelf">
+  	      <table class="shelf">
+  	        <tr>
+  	          <td><img class="toReadBook"><span id="noCurrent"></span></td>
+  	          <td><img class="toReadBook"></td>
+  	          <td><img class="toReadBook"></td>
+  	          <td><img class="toReadBook"></td>
+  	          <td><img class="toReadBook"></td>
+  	        </tr>
+  	      </table>
+  	    </div>
+      </div>
+		</div>
+  </div>
+	<div class="container hidden" id="searchResults">
+		<h3 style="padding-top: 5%;">Showing search results for <span style="font-weight: bold;" id="query"></span>...</h3>
+    <table class="results">
+      <tr>
+        <td style="width: 30%">
+          <img class="coverImg">
+        </td>
+        <td>
+          <h3 class="title"></h3>
+          <h6 class="author"></h6>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img class="coverImg">
+        </td>
+        <td>
+          <h3 class="title"></h3>
+          <h6 class="author"></h6>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img class="coverImg">
+        </td>
+        <td>
+          <h3 class="title"></h3>
+          <h6 class="author"></h6>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img class="coverImg">
+        </td>
+        <td>
+          <h3 class="title"></h3>
+          <h6 class="author"></h6>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img class="coverImg">
+        </td>
+        <td>
+          <h3 class="title"></h3>
+          <h6 class="author"></h6>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img class="coverImg">
+        </td>
+        <td>
+          <h3 class="title"></h3>
+          <h6 class="author"></h6>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img class="coverImg">
+        </td>
+        <td>
+          <h3 class="title"></h3>
+          <h6 class="author"></h6>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img class="coverImg">
+        </td>
+        <td>
+          <h3 class="title"></h3>
+          <h6 class="author"></h6>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img class="coverImg">
+        </td>
+        <td>
+          <h3 class="title"></h3>
+          <h6 class="author"></h6>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img class="coverImg">
+        </td>
+        <td>
+          <h3 class="title"></h3>
+          <h6 class="author"></h6>
+        </td>
+      </tr>
+    </table>
+	</div>
+<script type="module" src="script.js"></script>
+<!--   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script> -->
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+	
+
+</body>
+
+</html>

@@ -1,0 +1,145 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+        v2.0 | 20110126
+        License: none (public domain)
+        */
+ 
+/*         html, body, div, span, applet, object, iframe,
+        h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+        a, abbr, acronym, address, big, cite, code,
+        del, dfn, em, img, ins, kbd, q, s, samp,
+        small, strike, strong, sub, sup, tt, var,
+        b, u, i, center,
+        dl, dt, dd, ol, ul, li,
+        fieldset, form, label, legend,
+        table, caption, tbody, tfoot, thead, tr, th, td,
+        article, aside, canvas, details, embed,
+        figure, figcaption, footer, header, hgroup,
+        menu, nav, output, ruby, section, summary,
+        time, mark, audio, video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        } */
+        /* HTML5 display-role reset for older browsers */
+/*         article, aside, details, figcaption, figure,
+        footer, header, hgroup, menu, nav, section {
+            display: block;
+        }
+        body {
+            line-height: 1;
+        }
+        ol, ul {
+            list-style: none;
+        }
+        blockquote, q {
+            quotes: none;
+        }
+        blockquote:before, blockquote:after,
+        q:before, q:after {
+            content: '';
+            content: none;
+        }
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        } */
+/*=======================================================================================*/
+/*============================== MY STYLES =============================================*/
+/*=====================================================================================*/
+
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+} */
+nav {
+	font-family: sans-serif;
+}
+html body {
+/*   background: #d3e2ee; */
+	background: #999189;
+  font-family: 'Share Tech Mono', monospace;
+}
+.choosetime{
+  text-align: center;
+  color:#fdf7f7;
+  font-weight: bold;
+  font-size: 90px;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-top: 50px;
+}
+
+.hidden {
+	display: none;
+}
+
+/* button{
+	outline:none;
+	background: transparent;
+	padding: 15px 15px;
+	font-weight: bold;
+ 	border: 3px solid #fdf7f7;
+	color: #fdf7f7;
+ 	text-align: center;
+	cursor: pointer;
+ background-position: center;
+	margin: 50px;
+} */
+
+/* button:hover{
+	border: 1px solid #413528;
+	background:#413528;
+	transition: 0.5s;
+} */
+
+/* .buttonsec{
+  padding-left: 310px;
+  padding-top: 100px;
+} */
+
+/* .b{
+  margin: 100px 100px;
+  position: relative;
+} */
+
+
+#cbtn {
+	margin-top: 400px;
+}
+
+/* .buttonsecc{
+   padding-left: 370px;
+
+} */
+
+/* .button-container{
+ position:relative;
+ height:100%;
+}
+
+#count-down {
+	position: absolute;
+  top: 70%;
+  transform: translateY(-50%);
+} */
+.margin-fix {
+	margin-top: 500px;
+}
+
+#cat img {
+	width: 50%;
+	position:absolute;
+	bottom:0px;
+	left: 50%;
+}
+
+#timer{
+  color: #fdf7f7;
+	font-size: 80px;
+  position: absolute;
+  bottom: 50%;
+}

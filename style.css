@@ -1,0 +1,195 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+        v2.0 | 20110126
+        License: none (public domain)
+        */
+ 
+/*         html, body, div, span, applet, object, iframe,
+        h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+        a, abbr, acronym, address, big, cite, code,
+        del, dfn, em, img, ins, kbd, q, s, samp,
+        small, strike, strong, sub, sup, tt, var,
+        b, u, i, center,
+        dl, dt, dd, ol, ul, li,
+        fieldset, form, label, legend,
+        table, caption, tbody, tfoot, thead, tr, th, td,
+        article, aside, canvas, details, embed,
+        figure, figcaption, footer, header, hgroup,
+        menu, nav, output, ruby, section, summary,
+        time, mark, audio, video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        } */
+        /* HTML5 display-role reset for older browsers */
+/*         article, aside, details, figcaption, figure,
+        footer, header, hgroup, menu, nav, section {
+            display: block;
+        }
+        body {
+            line-height: 1;
+        }
+        ol, ul {
+            list-style: none;
+        }
+        blockquote, q {
+            quotes: none;
+        }
+        blockquote:before, blockquote:after,
+        q:before, q:after {
+            content: '';
+            content: none;
+        }
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        } */
+/*=======================================================================================*/
+/*============================== MY STYLES =============================================*/
+/*=====================================================================================*/
+
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+} */
+
+nav {
+	font-family: sans-serif;
+}
+
+html body {
+  background: #b6ada5;
+	font-family: 'Share Tech Mono', monospace;
+/*   font-family: Georgia, 'Times New Roman', Times, serif; */
+}
+
+body {
+  margin: 0;
+  width: 100vw;
+  padding-bottom: 2%;
+}
+
+.container {
+  width: 100%;
+}
+.currentShelf {
+  width: 100%;
+}
+
+.shelf {
+  width: 60%;
+  margin: auto;
+}
+
+.shelf td {
+  width: 20%;
+}
+
+.currentBook, .readBook, .toReadBook {
+  width: 80%;
+  height: auto;
+  box-shadow: 5px 10px 8px #888888;
+  transition: width 0.5s;
+  vertical-align: center;
+}
+
+.currentBook:hover, .readBook:hover, .toReadBook:hover {
+  width: 90%;
+  height: auto;
+}
+
+.header{
+  background:#9a9189;
+  padding-bottom: 200px;
+  padding-top: 200px;
+}
+
+.welcome{
+  text-align: center;
+  color:#fdf7f7;
+  font-weight: bold;
+  font-size: 70px;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-top: 50px;
+}
+
+.hello{
+/*   text-align: center; */
+  color:#fdf7f7;
+  font-weight: bold;
+  font-size: 50px;
+  padding-top: 120px;
+}
+
+#currentlyReading{
+/*   text-align: center; */
+  color:#fdf7f7;
+  font-weight: bold;
+  font-size: 50px;
+  padding-top:20px;
+  padding-bottom: 80px;
+}
+
+.creads{
+  color:#fdf7f7;
+  font-weight: bold;
+  font-size: 30px;
+  padding-top:50px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.bookShelf{
+  text-align: center;
+  width: 100%;
+}
+
+.shelf-collection {
+  background-color: #9a9189;
+  border-radius: 25px;
+  padding-bottom: 5%;
+  box-shadow: 5px 10px 8px #888888;
+}
+
+.hidden {
+	display: none;
+}
+
+.btn btn-primary{
+  background-position: center;
+}
+
+.results {
+  width: 100%;
+}
+
+.results td {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.results img {
+  width: 50%;
+  height: auto;
+  margin: auto;
+}
+
+#stats {
+	margin-bottom: 50px; 
+}
+
+.center-div {
+	margin: auto;
+	width: 60%;
+	padding: 10px;
+}
+
+.timer-link {
+	margin-top: 250px;
+	margin-left: 100px;
+	border: #fdf7f7;
+}
